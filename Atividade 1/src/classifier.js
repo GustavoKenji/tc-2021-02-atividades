@@ -4,22 +4,22 @@ function classifier(personName, personAge) {
   person.age = personAge;
 
   if (person.age < 0 || person.age >= 110) {
-    throw new Error("Idade inválida");
+    throw "Idade inválida";
   }
 
   let type = "";
 
   if (person.age <= 11) {
-    type = "Criança";
+    type = "criança";
   } else if (person.age <= 18) {
-    type = "Adolescente";
+    type = "adolescente";
   } else if (person.age <= 59) {
-    type = "Adulto";
+    type = "adulto";
   } else {
-    type = "Idoso";
+    type = "idoso";
   };
 
-	return person.name + " é " + type; 
+	return `${person.name} é ${type}`; 
 }
 
 module.exports = classifier;
