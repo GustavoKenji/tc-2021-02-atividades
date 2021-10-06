@@ -10,5 +10,7 @@ function generateRandomNumber(start, end) {
   let diff = end - start + 1;
   let random = Math.random() * diff;
 
-  return start + random;
+  return random;
 }
+
+module.exports = generateRandomNumber;

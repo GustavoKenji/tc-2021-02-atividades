@@ -21,3 +21,5 @@ function classifier(personName, personAge) {
 
 	return person.name + " é " + type; 
 }
+
+module.exports = classifier;
