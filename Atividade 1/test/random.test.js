@@ -7,4 +7,11 @@ describe('Random', () => {
 		const res = generateRandomNumber(start, end);
 		expect(res).toBe(-1);
 	});
+
+	test('should return -1 when end value is negative', () => {
+		const start = 15;
+		const end = -10;
+		const res = generateRandomNumber(start, end);
+		expect(res).toBe(-1);
+	});
 });
