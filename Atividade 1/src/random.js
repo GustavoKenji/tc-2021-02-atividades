@@ -7,10 +7,9 @@ function generateRandomNumber(start, end) {
     return -1;
   }
 
-  let diff = end - start + 1;
-  let random = Math.random() * diff;
-
-  return random;
+  min = Math.ceil(start);
+	max = Math.floor(end);
+  return random = Math.floor(Math.random() * (max - min)) + min;
 }
 
 module.exports = generateRandomNumber;

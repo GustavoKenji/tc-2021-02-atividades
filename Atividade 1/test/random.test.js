@@ -21,4 +21,12 @@ describe('Random', () => {
 		const res = generateRandomNumber(start, end);
 		expect(res).toBe(-1);
 	});
+
+	test('should return random value between start and end', () => {
+		const start = 200;
+		const end = 3000;
+		const res = generateRandomNumber(start, end);
+		console.log(res);
+		expect(res);
+	});
 });
