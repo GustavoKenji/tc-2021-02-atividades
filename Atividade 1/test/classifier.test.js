@@ -33,4 +33,12 @@ describe('Classifier', () => {
 		
 		expect(person).toBe('Gustavo é adulto');
 	});
+
+	test('the person should be an old man/woman', () => {
+		const name = 'Gustavo';
+		const age = 77;
+		let person = classifier(name, age);
+		
+		expect(person).toBe('Gustavo é idoso');
+	})
 });
