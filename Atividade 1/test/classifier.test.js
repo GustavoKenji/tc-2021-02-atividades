@@ -9,4 +9,12 @@ describe('Classifier', () => {
 			classifier(name, age);
 		}).toThrow('Idade inválida');
 	});
+
+	test('the person should be a child', () => {
+		const name = 'Gustavo';
+		const age = 7;
+		let person = classifier(name, age);
+		
+		expect(person).toBe('Gustavo é criança');
+	});
 });
